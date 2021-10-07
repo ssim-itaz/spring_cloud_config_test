@@ -74,3 +74,10 @@ spring:
             - RemoveRequestHeader=Cookie #새로운 데이터처럼 인식시키기 위해서 RequestHeader를 초기화.
             - RewritePath=/user-service/(?<segement>.*), /$\{segement}
             - AuthorizationHeaderFilter
+
+#spring actuator에서 사용할 정보  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans            
