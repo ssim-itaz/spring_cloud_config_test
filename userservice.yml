@@ -2,3 +2,6 @@ token:
   expiration:
     time: 86400000 #token 만료시간
   secret:  itazUserToken #token 암복호화 키
+
+gateway:
+  ip: 127.0.0.1
