@@ -2,15 +2,3 @@ token:
   expiration:
     time: 86400000 #token 만료시간
   secret:  itazUserToken #token 암복호화 키
-
-gateway:
-  ip: 211.236.48.234
-#  ip: 127.0.0.1
-
-spring:
-  rabbitmq:
-    host: 211.236.48.234
-#    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
