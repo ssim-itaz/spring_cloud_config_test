@@ -21,15 +21,16 @@ spring:
   config:
     activate:
       on-profile: "local" 
-    url: jdbc:log4jdbc:mariadb://211.236.48.204:3306/itz_lxp
-    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  datasource:
+    url: jdbc:mariadb://211.236.48.204:3306/itz_lxp
+    driver-class-name: org.mariadb.jdbc.Driver
     username: root
-    password: itaz9045
+    password: '{cipher}a0fa1719238ed5460029f026876ea5fa02b1a25b3559044795fa15199a1c2eb8'
   rabbitmq:
     host: 127.0.0.1
     port: 5672
     username: webadm
-    password: nico1765
+    password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
   cloud:
     config:
       server:
@@ -49,12 +50,12 @@ spring:
     url: jdbc:mariadb://211.236.48.204:3306/itz_lxp
     driver-class-name: org.mariadb.jdbc.Driver
     username: root
-    password: itaz9045
+    password: '{cipher}a0fa1719238ed5460029f026876ea5fa02b1a25b3559044795fa15199a1c2eb8'
   rabbitmq:
-    host: 211.236.48.234
+    host: 127.0.0.1
     port: 5672
     username: webadm
-    password: nico1765
+    password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
   cloud:
     config:
       server:
