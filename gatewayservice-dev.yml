@@ -17,7 +17,3 @@ spring:
 # private인 경우 사용자 정보 및 비밀번호 사용          
 #          username: ssim-itaz
 #          password: password
-token:
-  expiration:
-    time: 86400000 #token 만료시간
-  secret:  itazUserToken #token 암복호화 키
