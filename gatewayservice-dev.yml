@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: 127.0.0.1
+    host: 211.236.48.234
     port: 5672
     username: webadm
     password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
