@@ -1,7 +1,4 @@
 spring:
-  config:
-    activate:
-      on-profile: "local" 
   datasource:
     url: jdbc:mariadb://211.236.48.204:3306/itz_lxp
     driver-class-name: org.mariadb.jdbc.Driver
