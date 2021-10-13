@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: '{cipher}d1801d16201b34c83611c0d2daff70e9678978eb1726029f1ddfdafa741d1ca12dba1a43a7f88cd030cbae7cad64daa56559d2e39d0c7535b2e2957f5a485244'
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: '{cipher}11f61e53aaaeaf80a33f77314e150a8aa1d54f4b0e382bd9a00ae351bd9f6e9b'
+    password: '{cipher}a0fa1719238ed5460029f026876ea5fa02b1a25b3559044795fa15199a1c2eb8'
+  rabbitmq:
+    host: '{cipher}5bd049765ca94d92bef4fcce8be137fd907eefefe2f91830f597b5d783e0b489'
+    port: 5672
+    username: '{cipher}b723927245d33e3bcf6db69cdda898c41fafd9e952b5613da40a38bf9b7f4697'
+    password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: '{cipher}d237474f43bc6423b3ad8c56b4cf6b699f3ba15584a54b4e7eea521348dd00120abc97d0529adf3f63a9080dbbd8e944'
+gateway:
+  ip: '{cipher}5d98a83a32295bc951b16f93f4298c39e7ca79ea2b50d25973885be96019ba3a'    
