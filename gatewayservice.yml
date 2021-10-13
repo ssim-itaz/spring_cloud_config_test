@@ -4,15 +4,3 @@ spring:
     port: 5672
     username: '{cipher}f7900a8f20ee53cd48db86f4dd05c57006e6364866067489d656a52eb8376839d5ba1a32bd6f7cb03f3c23a37386f6785c40d80894b81671c453ccefc2292ebc74fba297b72fc2a914c88f7ba9bb88db'
     password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
-#  profiles:
-#    active: native
-  cloud:
-    config:
-      server:
-#        native:
-#          search-locations: file://G:\webHome\configyml
-        git:
-          uri: '{cipher}552e9164da1b81c971980e6cc14d0e0eb720e1c2e8afe043cb37534c87abe319280d3ca3625bda9023e762a6bc1ca7400e12d0f0fdc4f774a804619c09b101768daca5ffd6d907da644cb2f3525af86f'
-#          uri: file://G:\local_git          
-# private인 경우 사용자 정보 및 비밀번호 사용          
-#          username: ssim-itaz
