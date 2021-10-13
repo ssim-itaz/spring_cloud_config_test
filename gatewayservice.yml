@@ -4,3 +4,15 @@ spring:
     port: 5672
     username: '{cipher}b723927245d33e3bcf6db69cdda898c41fafd9e952b5613da40a38bf9b7f4697'
     password: '{cipher}3f106d35e43cd0ee5077032d4766f3623212c18d1b3a99c1439bae71216aa64c'
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: '{cipher}d237474f43bc6423b3ad8c56b4cf6b699f3ba15584a54b4e7eea521348dd00120abc97d0529adf3f63a9080dbbd8e944'
+gateway:
+  ip: '{cipher}5d98a83a32295bc951b16f93f4298c39e7ca79ea2b50d25973885be96019ba3a'
