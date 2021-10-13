@@ -2,3 +2,17 @@ token:
   expiration:
     time: 86400000 #token 만료시간
   secret:  itazUserToken #token 암복호화 키
+
+spring:
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: file://G:\webHome\configyml
+        git:
+          uri: '{cipher}552e9164da1b81c971980e6cc14d0e0eb720e1c2e8afe043cb37534c87abe319280d3ca3625bda9023e762a6bc1ca7400e12d0f0fdc4f774a804619c09b101768daca5ffd6d907da644cb2f3525af86f'
+#          uri: file://G:\local_git          
+# private인 경우 사용자 정보 및 비밀번호 사용          
+#          username: ssim-itaz
